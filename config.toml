@@ -1,0 +1,32 @@
+baseurl = "https://blog.uchiwa.io/"
+author = "Simon Plourde"
+title = "Uchiwa Blog"
+languageCode = "en-us"
+theme = "cocoa"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+email = "hello@uchiwa.io"
+highlightjs = true
+gatracker = "UA-56100759-2"
+github = "//github.com/palourde"
+twitter = "//twitter.com/uchiwaio"
+
+[permalinks]
+blog = "blog/:slug/"
+
+[[menu.main]]
+name   = "Blog"
+url    = ""
+weight = 0
+
+[[menu.main]]
+name   = "Main Website"
+url    = "https://uchiwa.io"
+weight = 10
+
+[[menu.main]]
+name   = "Docs"
+url    = "https://docs.uchiwa.io"
+weight = 20

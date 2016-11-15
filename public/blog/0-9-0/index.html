@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<base href="https://blog.uchiwa.io/">
+<title>
+
+
+     Uchiwa 0.9.0 
+
+</title>
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-9-0/">
+
+
+<script type="text/javascript">
+    var baseURL = 'https:\/\/blog.uchiwa.io\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/reset.css?1479224505">
+<link rel="stylesheet" href="/css/pygments.css?1479224505">
+<link rel="stylesheet" href="/css/main.css?1479224505">
+
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+</head>
+
+
+<body lang="">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="/"><div class="name"></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="">
+                            <span>Blog</span>
+                        </a>
+                    
+                        <a href="https://uchiwa.io">
+                            <span>Main Website</span>
+                        </a>
+                    
+                        <a href="https://docs.uchiwa.io">
+                            <span>Docs</span>
+                        </a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/palourde" target="_blank">
+                <i class="icon ion-social-github"></i>
+            </a>
+        
+
+        
+            <a href="//twitter.com/uchiwaio" target="_blank">
+                <i class="icon ion-social-twitter"></i>
+            </a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:hello@uchiwa.io">
+                <i class="icon ion-ios-email larger"></i>
+            </a>
+        
+
+        
+            <a href="https://blog.uchiwa.io/index.xml">
+                <i class="icon ion-social-rss larger"></i>
+            </a>
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Uchiwa 0.9.0
+
+</div>
+
+                    <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
+                </div>
+                <div class="meta">
+                    <div class="date" title="Tue Jun 9 2015 00:00:00 -0500">Jun 9, 2015</div>
+                    <div class="reading-time"><div class="middot"></div>1 minute read</div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>We&rsquo;re happy to announce the release of Uchiwa 0.9.0. This new version introduces some new features and a lot of improvements behind the scene.</p>
+
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.9.0</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#090-2015-06-09">view the changelog</a>. It will be available for download on the Sensu repositories soon.</p>
+
+<h3 id="vendoring-dependencies">Vendoring dependencies</h3>
+
+<p>This will mainly impact the users that are running Uchiwa from the source. Uchiwa now uses <a href="https://github.com/tools/godep">Godep</a> to manage the project dependencies. We highly recommend you to use <em>godep</em> to run Uchiwa or build your own packages in order to make sure you are using the right dependencies at any time. The <a href="http://docs.uchiwa.io/en/latest/getting-started/#from-source">Uchiwa documentation</a> has been updated to reflect this new change.</p>
+
+<h3 id="the-search-inbox-now-display-a-result-count">The search inbox now display a result count</h3>
+
+<p>A gif is worth a thousand words.</p>
+
+<p><img src="/images/0-9-0-result_count.gif" alt="" /></p>
+
+<h3 id="filter-events-by-check">Filter events by check</h3>
+
+<p>A new filter is now available on the <em>events</em> view, which allow you to display all events related to a specific check.</p>
+
+<h3 id="display-the-output-for-all-checks">Display the output for all checks</h3>
+
+<p>This is a change that was introduced with Sensu 0.18.0 and Uchiwa users can now take advantage of it. You will now be able to see the last output of a successful check, which was previously only possible with checks associated to an event.</p>
+
+<p>Go <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#090-2015-06-09">see the changelog</a> for more changes!</p>
+
+                <br>
+                <p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-56100759-2");
+    pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+</body>
+</html>
+

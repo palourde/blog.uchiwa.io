@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<base href="https://blog.uchiwa.io/">
+<title>
+
+
+     Uchiwa 0.14.0 
+
+</title>
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-14-0/">
+
+
+<script type="text/javascript">
+    var baseURL = 'https:\/\/blog.uchiwa.io\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/reset.css?1479224505">
+<link rel="stylesheet" href="/css/pygments.css?1479224505">
+<link rel="stylesheet" href="/css/main.css?1479224505">
+
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+</head>
+
+
+<body lang="">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="/"><div class="name"></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="">
+                            <span>Blog</span>
+                        </a>
+                    
+                        <a href="https://uchiwa.io">
+                            <span>Main Website</span>
+                        </a>
+                    
+                        <a href="https://docs.uchiwa.io">
+                            <span>Docs</span>
+                        </a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/palourde" target="_blank">
+                <i class="icon ion-social-github"></i>
+            </a>
+        
+
+        
+            <a href="//twitter.com/uchiwaio" target="_blank">
+                <i class="icon ion-social-twitter"></i>
+            </a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:hello@uchiwa.io">
+                <i class="icon ion-ios-email larger"></i>
+            </a>
+        
+
+        
+            <a href="https://blog.uchiwa.io/index.xml">
+                <i class="icon ion-social-rss larger"></i>
+            </a>
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Uchiwa 0.14.0
+
+</div>
+
+                    <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
+                </div>
+                <div class="meta">
+                    <div class="date" title="Thu Jan 7 2016 00:00:00 EST">Jan 7, 2016</div>
+                    <div class="reading-time"><div class="middot"></div>1 minute read</div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>We&rsquo;re happy to announce the release of Uchiwa 0.14.0, which introduces two new Sensu features and configuration directories.</p>
+
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.14.0</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0140-2016-01-05">view the changelog</a>.</p>
+
+<h3 id="configuration-directories">Configuration Directories</h3>
+
+<p>The Uchiwa configuration can now be loaded partially or fully from configuration snippets located within one or multiple directories. If you upgrade using the Uchiwa packages, you can already start using the <code>/etc/sensu/dashboard.d/</code> directory.</p>
+
+<p>The full documentation is available in the <a href="http://docs.uchiwa.io/en/latest/configuration/overview/#configuration-directories">Uchiwa docs</a>.</p>
+
+<h3 id="deleting-check-results">Deleting Check Results</h3>
+
+<p>This new Sensu feature was introduced with <a href="https://github.com/sensu/sensu/blob/master/CHANGELOG.md#features">Sensu 0.21.0</a>.</p>
+
+<blockquote>
+<p>This feature allows users to clean up &ldquo;stale&rdquo; check result data for checks that have been removed.</p>
+</blockquote>
+
+<p>Learn how to delete a check result by heading to the <a href="http://docs.uchiwa.io/en/latest/features/deleting-check-results/">Uchiwa docs</a>.</p>
+
+<h3 id="issuing-check-requests">Issuing Check Requests</h3>
+
+<p>This Sensu feature has been around for a long time and is finally available directly from Uchiwa.</p>
+
+<p>You can now manually issue a check request from the dashboard, which is particularly helpful for checks that are not scheduled to run frequently.</p>
+
+<p>Learn how to issue a check request by heading to the <a href="http://docs.uchiwa.io/en/latest/features/issuing-check-requests/">Uchiwa docs</a>.</p>
+
+                <br>
+                <p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-56100759-2");
+    pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+</body>
+</html>
+

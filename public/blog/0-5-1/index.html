@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<base href="https://blog.uchiwa.io/">
+<title>
+
+
+     Uchiwa 0.5.1 
+
+</title>
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-5-1/">
+
+
+<script type="text/javascript">
+    var baseURL = 'https:\/\/blog.uchiwa.io\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/reset.css?1479224505">
+<link rel="stylesheet" href="/css/pygments.css?1479224505">
+<link rel="stylesheet" href="/css/main.css?1479224505">
+
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+</head>
+
+
+<body lang="">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="/"><div class="name"></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="">
+                            <span>Blog</span>
+                        </a>
+                    
+                        <a href="https://uchiwa.io">
+                            <span>Main Website</span>
+                        </a>
+                    
+                        <a href="https://docs.uchiwa.io">
+                            <span>Docs</span>
+                        </a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/palourde" target="_blank">
+                <i class="icon ion-social-github"></i>
+            </a>
+        
+
+        
+            <a href="//twitter.com/uchiwaio" target="_blank">
+                <i class="icon ion-social-twitter"></i>
+            </a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:hello@uchiwa.io">
+                <i class="icon ion-ios-email larger"></i>
+            </a>
+        
+
+        
+            <a href="https://blog.uchiwa.io/index.xml">
+                <i class="icon ion-social-rss larger"></i>
+            </a>
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Uchiwa 0.5.1
+
+</div>
+
+                    <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
+                </div>
+                <div class="meta">
+                    <div class="date" title="Sat Feb 21 2015 00:00:00 EST">Feb 21, 2015</div>
+                    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>We&rsquo;re happy to announce the release of Uchiwa 0.5.1! This is a small bug fix release but since Uchiwa 0.5.0  was never officially released due to some build issues, it also contains a lot of new exciting features.</p>
+
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.5.1</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#051-2015-02-21">view the changelog</a>. It should also be available for download on the Sensu repositories soon.</p>
+
+<p>Please <a href="https://github.com/sensu/uchiwa/issues">report</a> any issue you may find.</p>
+
+<h4 id="two-projects-one-dashboard">Two projects, one dashboard</h4>
+
+<p>With the 0.5.0 release, Uchiwa has been divided into two distinct repositories. For more information, read the <a href="http://blog.uchiwa.io/two-projects-one-dashboard/">blog post</a>.</p>
+
+<h4 id="contribute-to-the-uchiwa-docs">Contribute to the Uchiwa docs</h4>
+
+<p>All documentation regarding Uchiwa has been moved to <a href="http://docs.uchiwa.io/en/latest/">docs.uchiwa.io</a>. You can now start contributing to the documentation by forking the <a href="https://github.com/palourde/uchiwa-docs">uchiwa-docs repository</a>.</p>
+
+<h4 id="improved-authentication">Improved authentication</h4>
+
+<p>The basic http authentication method previously used has been replaced with JSON Web Tokens (JWT), which allows us to implement a login page instead of a dialog box.</p>
+
+<p><img src="/images/0-5-1-login.png" alt="" /></p>
+
+<h4 id="aggregates">Aggregates</h4>
+
+<p>You can now list your aggregate checks directly from Uchiwa, using the <em>Aggregates</em> view. You can also preview the result of a particular aggregate check that ran at a specific time within the same view.</p>
+
+<p><img src="/images/0-5-1-aggregates.png" alt="" /></p>
+
+<h4 id="custom-date-for-stashes">Custom date for stashes</h4>
+
+<p>A fifth option is now available during stash creation in order to allow a custom expiration date by manually entering the desired value.</p>
+
+<p><img src="/images/0-5-1-expiration.png" alt="" /></p>
+
+<h4 id="silenced-clients-filter">Silenced clients filter</h4>
+
+<p>The option <em>Silenced Clients</em> has been added to the <em>Hide</em>  dropdown menu on the <em>Events</em> view, which will hide any events associated to a client that has already been silenced. In addition to this change, the client acknowledgment status is now also shown beside the source name.</p>
+
+                <br>
+                <p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-56100759-2");
+    pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+</body>
+</html>
+

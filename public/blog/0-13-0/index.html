@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<base href="https://blog.uchiwa.io/">
+<title>
+
+
+     Uchiwa 0.13.0 
+
+</title>
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-13-0/">
+
+
+<script type="text/javascript">
+    var baseURL = 'https:\/\/blog.uchiwa.io\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/reset.css?1479224505">
+<link rel="stylesheet" href="/css/pygments.css?1479224505">
+<link rel="stylesheet" href="/css/main.css?1479224505">
+
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+</head>
+
+
+<body lang="">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="/"><div class="name"></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="">
+                            <span>Blog</span>
+                        </a>
+                    
+                        <a href="https://uchiwa.io">
+                            <span>Main Website</span>
+                        </a>
+                    
+                        <a href="https://docs.uchiwa.io">
+                            <span>Docs</span>
+                        </a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/palourde" target="_blank">
+                <i class="icon ion-social-github"></i>
+            </a>
+        
+
+        
+            <a href="//twitter.com/uchiwaio" target="_blank">
+                <i class="icon ion-social-twitter"></i>
+            </a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:hello@uchiwa.io">
+                <i class="icon ion-ios-email larger"></i>
+            </a>
+        
+
+        
+            <a href="https://blog.uchiwa.io/index.xml">
+                <i class="icon ion-social-rss larger"></i>
+            </a>
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Uchiwa 0.13.0
+
+</div>
+
+                    <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
+                </div>
+                <div class="meta">
+                    <div class="date" title="Sun Nov 22 2015 00:00:00 EST">Nov 22, 2015</div>
+                    <div class="reading-time"><div class="middot"></div>1 minute read</div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>We&rsquo;re happy to announce the release of Uchiwa 0.13.0. This new version introduces two important features designed for high availability.</p>
+
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.13.0</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0130-2015-11-22">view the changelog</a>. It will be available for download on the Sensu repositories soon.</p>
+
+<h3 id="datacenters-high-availability">Datacenters high availability</h3>
+
+<p>You can now define multiple Sensu APIs by datacenter in order to provide failover and rudimentary load balancing between these APIs, which eliminates the latest single point of failure in Uchiwa for a truly redundant environment.</p>
+
+<p>Learn how to get started with the datacenter high availability by heading to the <a href="http://docs.uchiwa.io/en/latest/configuration/sensu/#datacenters-high-availability">Uchiwa docs</a>.</p>
+
+<h3 id="static-rsa-keys">Static RSA keys</h3>
+
+<p>It&rsquo;s now possible to use your own 2048-bit RSA key for generating and validating the signatures of the JSON Web Tokens (JWT) used by the authentication module.</p>
+
+<p>By default, Uchiwa generates a temporary key during its launch, which is later destroyed once the process is stopped or restarted. This behavior is problematic when multiple instances of Uchiwa are used behind a load balancer or if the Uchiwa process needs to be frequently restarted.</p>
+
+<p>To start using your own keys, consult the <a href="http://docs.uchiwa.io/en/latest/configuration/sensu/#datacenters-high-availability">Uchiwa docs</a>.</p>
+
+<p>Go <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0130-2015-11-22">see the changelog</a> for more changes!</p>
+
+                <br>
+                <p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-56100759-2");
+    pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+</body>
+</html>
+

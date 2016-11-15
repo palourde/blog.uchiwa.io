@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<base href="https://blog.uchiwa.io/">
+<title>
+
+
+     Two Projects, One Dashboard 
+
+</title>
+<link rel="canonical" href="https://blog.uchiwa.io/blog/two-projects-one-dashboard/">
+
+
+<script type="text/javascript">
+    var baseURL = 'https:\/\/blog.uchiwa.io\/';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
+    if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
+        window.location.protocol = 'https:';
+    }
+</script>
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/reset.css?1479224505">
+<link rel="stylesheet" href="/css/pygments.css?1479224505">
+<link rel="stylesheet" href="/css/main.css?1479224505">
+
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+</head>
+
+
+<body lang="">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="/"><div class="name"></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="">
+                            <span>Blog</span>
+                        </a>
+                    
+                        <a href="https://uchiwa.io">
+                            <span>Main Website</span>
+                        </a>
+                    
+                        <a href="https://docs.uchiwa.io">
+                            <span>Docs</span>
+                        </a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/palourde" target="_blank">
+                <i class="icon ion-social-github"></i>
+            </a>
+        
+
+        
+            <a href="//twitter.com/uchiwaio" target="_blank">
+                <i class="icon ion-social-twitter"></i>
+            </a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:hello@uchiwa.io">
+                <i class="icon ion-ios-email larger"></i>
+            </a>
+        
+
+        
+            <a href="https://blog.uchiwa.io/index.xml">
+                <i class="icon ion-social-rss larger"></i>
+            </a>
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Two Projects, One Dashboard
+
+</div>
+
+                    <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
+                </div>
+                <div class="meta">
+                    <div class="date" title="Sun Jan 25 2015 00:00:00 EST">Jan 25, 2015</div>
+                    <div class="reading-time"><div class="middot"></div>1 minute read</div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>In order to improve Uchiwa&rsquo;s modularity and isolate two softwares written in different languages, the dashboard is now divided into two distinct repositories.</p>
+
+<h3 id="uchiwa-https-github-com-sensu-uchiwa"><a href="https://github.com/sensu/uchiwa">Uchiwa</a></h3>
+
+<p>The Uchiwa repository now contains the backend of Uchiwa, which consists of a Go web server that queries every Sensu API and exposes the results through its own API.</p>
+
+<h3 id="uchiwa-web-https-github-com-sensu-uchiwa-web"><a href="https://github.com/sensu/uchiwa-web">Uchiwa-web</a></h3>
+
+<p>The new Uchiwa-web repository is hosting the web dashboard, which is written with the AngularJS framework. Its job is to query the backend API and present the information in the most useful way possible.</p>
+
+<h3 id="what-s-the-impact">What&rsquo;s the impact?</h3>
+
+<p>Unless you want to contribute to Uchiwa, it does not affect you since Uchiwa-web is now included as a bower component. Make sure to run <code>npm install &ndash;production</code> after pulling the last changes, if you installed Uchiwa from the source.</p>
+
+<p>If you wish to start contributing and improving Uchiwa, we invite you to consult the <a href="https://uchiwa.io/#/docs/contributing">Uchiwa documentation</a> in order to properly setup your environment.</p>
+
+                <br>
+                <p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-56100759-2");
+    pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+</body>
+</html>
+

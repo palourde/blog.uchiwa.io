@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uchiwa Blog</title>
+    <link>https://blog.uchiwa.io/index.xml</link>
+    <description>Recent content on Uchiwa Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Nov 2016 12:00:00 -0500</lastBuildDate>
+    <atom:link href="https://blog.uchiwa.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Uchiwa 0.20.0</title>
+      <link>https://blog.uchiwa.io/blog/0-20-0/</link>
+      <pubDate>Tue, 15 Nov 2016 12:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-20-0/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.20.0, which introduces some
+interesting features and important behind the scenes changes.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.20.0&lt;/a&gt; right now and
+&lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0200-2016-11-14&#34;&gt;view the changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a quick overview of some of the new features:&lt;/p&gt;
+
+&lt;h2 id=&#34;users-level-configuration&#34;&gt;Users-level configuration&lt;/h2&gt;
+
+&lt;p&gt;Uchiwa can now be further customized, from the &lt;strong&gt;date format&lt;/strong&gt; to the &lt;strong&gt;default
+theme&lt;/strong&gt;. These are some of the most requested features we received.&lt;/p&gt;
+
+&lt;p&gt;Head over to the
+&lt;a href=&#34;https://docs.uchiwa.io/getting-started/configuration/#users-options&#34;&gt;Uchiwa documentation&lt;/a&gt;
+to learn how to get started with these new options.&lt;/p&gt;
+
+&lt;h2 id=&#34;regular-expressions-and-key-value-search-queries&#34;&gt;Regular Expressions and key:value search queries&lt;/h2&gt;
+
+&lt;p&gt;Filtering in Uchiwa just got smarter, because we understand that no two Sensu installations
+are alike and we hope to bring more flexibility in Uchiwa to support that fact.&lt;/p&gt;
+
+&lt;p&gt;Starting with 0.20, you can now use regexes in your searches and also optionally
+specify a field against which a value should be matched.&lt;/p&gt;
+
+&lt;p&gt;We added some examples in the
+&lt;a href=&#34;https://docs.uchiwa.io/guides/search-queries/&#34;&gt;Uchiwa documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;These are just some of the new changes, we invite you to consult the
+&lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md&#34;&gt;changelog&lt;/a&gt; for the
+complete list and we hope you enjoy this new release!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.14.0</title>
+      <link>https://blog.uchiwa.io/blog/0-14-0/</link>
+      <pubDate>Thu, 07 Jan 2016 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-14-0/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.14.0, which introduces two new Sensu features and configuration directories.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.14.0&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0140-2016-01-05&#34;&gt;view the changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;configuration-directories&#34;&gt;Configuration Directories&lt;/h3&gt;
+
+&lt;p&gt;The Uchiwa configuration can now be loaded partially or fully from configuration snippets located within one or multiple directories. If you upgrade using the Uchiwa packages, you can already start using the &lt;code&gt;/etc/sensu/dashboard.d/&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;The full documentation is available in the &lt;a href=&#34;http://docs.uchiwa.io/en/latest/configuration/overview/#configuration-directories&#34;&gt;Uchiwa docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;deleting-check-results&#34;&gt;Deleting Check Results&lt;/h3&gt;
+
+&lt;p&gt;This new Sensu feature was introduced with &lt;a href=&#34;https://github.com/sensu/sensu/blob/master/CHANGELOG.md#features&#34;&gt;Sensu 0.21.0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This feature allows users to clean up &amp;ldquo;stale&amp;rdquo; check result data for checks that have been removed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Learn how to delete a check result by heading to the &lt;a href=&#34;http://docs.uchiwa.io/en/latest/features/deleting-check-results/&#34;&gt;Uchiwa docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;issuing-check-requests&#34;&gt;Issuing Check Requests&lt;/h3&gt;
+
+&lt;p&gt;This Sensu feature has been around for a long time and is finally available directly from Uchiwa.&lt;/p&gt;
+
+&lt;p&gt;You can now manually issue a check request from the dashboard, which is particularly helpful for checks that are not scheduled to run frequently.&lt;/p&gt;
+
+&lt;p&gt;Learn how to issue a check request by heading to the &lt;a href=&#34;http://docs.uchiwa.io/en/latest/features/issuing-check-requests/&#34;&gt;Uchiwa docs&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.13.0</title>
+      <link>https://blog.uchiwa.io/blog/0-13-0/</link>
+      <pubDate>Sun, 22 Nov 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-13-0/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.13.0. This new version introduces two important features designed for high availability.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.13.0&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0130-2015-11-22&#34;&gt;view the changelog&lt;/a&gt;. It will be available for download on the Sensu repositories soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;datacenters-high-availability&#34;&gt;Datacenters high availability&lt;/h3&gt;
+
+&lt;p&gt;You can now define multiple Sensu APIs by datacenter in order to provide failover and rudimentary load balancing between these APIs, which eliminates the latest single point of failure in Uchiwa for a truly redundant environment.&lt;/p&gt;
+
+&lt;p&gt;Learn how to get started with the datacenter high availability by heading to the &lt;a href=&#34;http://docs.uchiwa.io/en/latest/configuration/sensu/#datacenters-high-availability&#34;&gt;Uchiwa docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;static-rsa-keys&#34;&gt;Static RSA keys&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s now possible to use your own 2048-bit RSA key for generating and validating the signatures of the JSON Web Tokens (JWT) used by the authentication module.&lt;/p&gt;
+
+&lt;p&gt;By default, Uchiwa generates a temporary key during its launch, which is later destroyed once the process is stopped or restarted. This behavior is problematic when multiple instances of Uchiwa are used behind a load balancer or if the Uchiwa process needs to be frequently restarted.&lt;/p&gt;
+
+&lt;p&gt;To start using your own keys, consult the &lt;a href=&#34;http://docs.uchiwa.io/en/latest/configuration/sensu/#datacenters-high-availability&#34;&gt;Uchiwa docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Go &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0130-2015-11-22&#34;&gt;see the changelog&lt;/a&gt; for more changes!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.11.0</title>
+      <link>https://blog.uchiwa.io/blog/0-11-0/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-11-0/</guid>
+      <description>
+
+&lt;p&gt;Good news - Uchiwa 0.11.1 has been published. This release introduces some major performance and stability enhancements.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.11.1&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0111-2015-09-23&#34;&gt;view the changelog&lt;/a&gt;. It will be available for download on the Sensu repositories within the next few days.&lt;/p&gt;
+
+&lt;h3 id=&#34;uchiwa-restful-api&#34;&gt;Uchiwa RESTful API&lt;/h3&gt;
+
+&lt;p&gt;The Uchiwa frontend application now fully takes advantage of the new granular API in order to efficiently load the precise resources needed by the web application. This results in a lower memory consumption of the browser and a more stable navigation.&lt;/p&gt;
+
+&lt;p&gt;This API is not considered stable yet in the sense that it might evolve within the next few releases but as soon it does, we&amp;rsquo;ll provide some documentation so you can take advantage of it and have access to a single source of information for all your Sensu data.&lt;/p&gt;
+
+&lt;h3 id=&#34;bulk-removal-of-stashes&#34;&gt;Bulk removal of stashes&lt;/h3&gt;
+
+&lt;p&gt;You can now easily delete multiple stashes at once.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-11-0-bulk-stashes.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;go-1-5-1&#34;&gt;Go 1.5.1&lt;/h3&gt;
+
+&lt;p&gt;Uchiwa is now built with Go 1.5.1 instead of 1.4.2, which brings some interesting improvements to the garbage collector and the runtime.&lt;/p&gt;
+
+&lt;p&gt;Go see the &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0111-2015-09-23&#34;&gt;changelog&lt;/a&gt; for all improvements and bug fixes!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.10.0</title>
+      <link>https://blog.uchiwa.io/blog/0-10-0/</link>
+      <pubDate>Tue, 30 Jun 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-10-0/</guid>
+      <description>
+
+&lt;p&gt;Great news, Uchiwa 0.10.0 has been released, and with it a number of new exciting features!&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.10.0&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/palourde/uchiwa/blob/master/CHANGELOG.md#0100-2015-06-29&#34;&gt;view the changelog&lt;/a&gt;. It will be available for download on the Sensu repositories soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;multiple-users-with-read-only&#34;&gt;Multiple users with read-only&lt;/h3&gt;
+
+&lt;p&gt;You can now define multiple users on your configuration file and additionally restrict the write access to one or many users. Learn how to get started by consulting the &lt;a href=&#34;http://docs.uchiwa.io/en/latest/configuration/uchiwa/#multiple-users-with-simple-authentication&#34;&gt;Uchiwa documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;enhancements-to-the-check-result-images&#34;&gt;Enhancements to the check result images&lt;/h3&gt;
+
+&lt;p&gt;All images on the check result view now have their dedicated section, as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-10-0-result_images.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go &lt;a href=&#34;https://github.com/palourde/uchiwa/blob/master/CHANGELOG.md#0100-2015-06-29&#34;&gt;see the changelog&lt;/a&gt; for more changes!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.9.0</title>
+      <link>https://blog.uchiwa.io/blog/0-9-0/</link>
+      <pubDate>Tue, 09 Jun 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-9-0/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.9.0. This new version introduces some new features and a lot of improvements behind the scene.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.9.0&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#090-2015-06-09&#34;&gt;view the changelog&lt;/a&gt;. It will be available for download on the Sensu repositories soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;vendoring-dependencies&#34;&gt;Vendoring dependencies&lt;/h3&gt;
+
+&lt;p&gt;This will mainly impact the users that are running Uchiwa from the source. Uchiwa now uses &lt;a href=&#34;https://github.com/tools/godep&#34;&gt;Godep&lt;/a&gt; to manage the project dependencies. We highly recommend you to use &lt;em&gt;godep&lt;/em&gt; to run Uchiwa or build your own packages in order to make sure you are using the right dependencies at any time. The &lt;a href=&#34;http://docs.uchiwa.io/en/latest/getting-started/#from-source&#34;&gt;Uchiwa documentation&lt;/a&gt; has been updated to reflect this new change.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-search-inbox-now-display-a-result-count&#34;&gt;The search inbox now display a result count&lt;/h3&gt;
+
+&lt;p&gt;A gif is worth a thousand words.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-9-0-result_count.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;filter-events-by-check&#34;&gt;Filter events by check&lt;/h3&gt;
+
+&lt;p&gt;A new filter is now available on the &lt;em&gt;events&lt;/em&gt; view, which allow you to display all events related to a specific check.&lt;/p&gt;
+
+&lt;h3 id=&#34;display-the-output-for-all-checks&#34;&gt;Display the output for all checks&lt;/h3&gt;
+
+&lt;p&gt;This is a change that was introduced with Sensu 0.18.0 and Uchiwa users can now take advantage of it. You will now be able to see the last output of a successful check, which was previously only possible with checks associated to an event.&lt;/p&gt;
+
+&lt;p&gt;Go &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#090-2015-06-09&#34;&gt;see the changelog&lt;/a&gt; for more changes!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.8.1</title>
+      <link>https://blog.uchiwa.io/blog/0-8-1/</link>
+      <pubDate>Tue, 05 May 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-8-1/</guid>
+      <description>&lt;p&gt;Good news! We are releasing Uchiwa 0.8.1 and it&amp;rsquo;s packed with improvements and bug fixes.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.8.1&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#081-2015-05-05&#34;&gt;view the changelog&lt;/a&gt;. It will be available for download on the Sensu repositories soon.&lt;/p&gt;
+
+&lt;p&gt;Improvement highlights since 0.7.0:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a dedicated datacenters view&lt;/li&gt;
+&lt;li&gt;The events are now ordered by status, then by most recent&lt;/li&gt;
+&lt;li&gt;Display relative times the lists&lt;/li&gt;
+&lt;li&gt;Refactoring of the stashes handlers in order to improve their reliability&lt;/li&gt;
+&lt;li&gt;User profile picture and dropdown menu in the navbar&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.7.0</title>
+      <link>https://blog.uchiwa.io/blog/0-7-0/</link>
+      <pubDate>Mon, 16 Mar 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-7-0/</guid>
+      <description>
+
+&lt;p&gt;We are pleased to announce the release of Uchiwa 0.7.0. Various major improvements have been made to the user interface, in addition to some small bug fixes.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.7.0&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#070-2015-03-13&#34;&gt;view the changelog&lt;/a&gt;. It&amp;rsquo;s already available for download on the Sensu repositories.&lt;/p&gt;
+
+&lt;h3 id=&#34;reorganization-of-the-navbar-and-sidebar&#34;&gt;Reorganization of the navbar and sidebar&lt;/h3&gt;
+
+&lt;p&gt;Most of the icons from the navbar were redundant with the ones available on the sidebar, so we decided to merge them on the latter. The &lt;em&gt;information&lt;/em&gt;, &lt;em&gt;settings&lt;/em&gt; and &lt;em&gt;logout&lt;/em&gt; action buttons are now accessible on the navbar, as shown on the screenshot below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-7-0-sidebar_navbar.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;aggregate-view&#34;&gt;Aggregate view&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;aggregate&lt;/em&gt; view has been refactored in order to use multiple panels and be contained within a single page, just like the &lt;em&gt;client&lt;/em&gt; view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-7-0-aggregate-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#070-2015-03-13&#34;&gt;see the changelog&lt;/a&gt; for more changes!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.6.0</title>
+      <link>https://blog.uchiwa.io/blog/0-6-0/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-6-0/</guid>
+      <description>
+
+&lt;p&gt;Today we released Uchiwa 0.6.0. The release improves the user interface and includes the AngularJS 1.3 update.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.6.0&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#060-2015-02-26&#34;&gt;view the changelog&lt;/a&gt;. It should also be available for download on the Sensu repositories soon.&lt;/p&gt;
+
+&lt;p&gt;Please &lt;a href=&#34;https://github.com/sensu/uchiwa/issues&#34;&gt;report&lt;/a&gt; any issue you may find.&lt;/p&gt;
+
+&lt;h3 id=&#34;redesign-of-the-panels-header&#34;&gt;Redesign of the panels header&lt;/h3&gt;
+
+&lt;p&gt;The first notable change is the conversion of the data center selector to a drop-down menu. We also moved all controls, such as the &lt;em&gt;actions&lt;/em&gt;, &lt;em&gt;subscriptions&lt;/em&gt; and &lt;em&gt;hide&lt;/em&gt;, to be aligned with the datacenter menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-6-0-datacenter.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;subscriptions-tooltip&#34;&gt;Subscriptions tooltip&lt;/h3&gt;
+
+&lt;p&gt;We added tooltips containing all subscriptions of a particular client or event to help you keep track of them and promote their usage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-6-0-subscriptions.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uchiwa 0.5.1</title>
+      <link>https://blog.uchiwa.io/blog/0-5-1/</link>
+      <pubDate>Sat, 21 Feb 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-5-1/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.5.1! This is a small bug fix release but since Uchiwa 0.5.0  was never officially released due to some build issues, it also contains a lot of new exciting features.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.5.1&lt;/a&gt; right now and &lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#051-2015-02-21&#34;&gt;view the changelog&lt;/a&gt;. It should also be available for download on the Sensu repositories soon.&lt;/p&gt;
+
+&lt;p&gt;Please &lt;a href=&#34;https://github.com/sensu/uchiwa/issues&#34;&gt;report&lt;/a&gt; any issue you may find.&lt;/p&gt;
+
+&lt;h4 id=&#34;two-projects-one-dashboard&#34;&gt;Two projects, one dashboard&lt;/h4&gt;
+
+&lt;p&gt;With the 0.5.0 release, Uchiwa has been divided into two distinct repositories. For more information, read the &lt;a href=&#34;http://blog.uchiwa.io/two-projects-one-dashboard/&#34;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;contribute-to-the-uchiwa-docs&#34;&gt;Contribute to the Uchiwa docs&lt;/h4&gt;
+
+&lt;p&gt;All documentation regarding Uchiwa has been moved to &lt;a href=&#34;http://docs.uchiwa.io/en/latest/&#34;&gt;docs.uchiwa.io&lt;/a&gt;. You can now start contributing to the documentation by forking the &lt;a href=&#34;https://github.com/palourde/uchiwa-docs&#34;&gt;uchiwa-docs repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;improved-authentication&#34;&gt;Improved authentication&lt;/h4&gt;
+
+&lt;p&gt;The basic http authentication method previously used has been replaced with JSON Web Tokens (JWT), which allows us to implement a login page instead of a dialog box.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-5-1-login.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;aggregates&#34;&gt;Aggregates&lt;/h4&gt;
+
+&lt;p&gt;You can now list your aggregate checks directly from Uchiwa, using the &lt;em&gt;Aggregates&lt;/em&gt; view. You can also preview the result of a particular aggregate check that ran at a specific time within the same view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-5-1-aggregates.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;custom-date-for-stashes&#34;&gt;Custom date for stashes&lt;/h4&gt;
+
+&lt;p&gt;A fifth option is now available during stash creation in order to allow a custom expiration date by manually entering the desired value.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-5-1-expiration.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;silenced-clients-filter&#34;&gt;Silenced clients filter&lt;/h4&gt;
+
+&lt;p&gt;The option &lt;em&gt;Silenced Clients&lt;/em&gt; has been added to the &lt;em&gt;Hide&lt;/em&gt;  dropdown menu on the &lt;em&gt;Events&lt;/em&gt; view, which will hide any events associated to a client that has already been silenced. In addition to this change, the client acknowledgment status is now also shown beside the source name.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two Projects, One Dashboard</title>
+      <link>https://blog.uchiwa.io/blog/two-projects-one-dashboard/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/two-projects-one-dashboard/</guid>
+      <description>
+
+&lt;p&gt;In order to improve Uchiwa&amp;rsquo;s modularity and isolate two softwares written in different languages, the dashboard is now divided into two distinct repositories.&lt;/p&gt;
+
+&lt;h3 id=&#34;uchiwa-https-github-com-sensu-uchiwa&#34;&gt;&lt;a href=&#34;https://github.com/sensu/uchiwa&#34;&gt;Uchiwa&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The Uchiwa repository now contains the backend of Uchiwa, which consists of a Go web server that queries every Sensu API and exposes the results through its own API.&lt;/p&gt;
+
+&lt;h3 id=&#34;uchiwa-web-https-github-com-sensu-uchiwa-web&#34;&gt;&lt;a href=&#34;https://github.com/sensu/uchiwa-web&#34;&gt;Uchiwa-web&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The new Uchiwa-web repository is hosting the web dashboard, which is written with the AngularJS framework. Its job is to query the backend API and present the information in the most useful way possible.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-s-the-impact&#34;&gt;What&amp;rsquo;s the impact?&lt;/h3&gt;
+
+&lt;p&gt;Unless you want to contribute to Uchiwa, it does not affect you since Uchiwa-web is now included as a bower component. Make sure to run &lt;code&gt;npm install &amp;ndash;production&lt;/code&gt; after pulling the last changes, if you installed Uchiwa from the source.&lt;/p&gt;
+
+&lt;p&gt;If you wish to start contributing and improving Uchiwa, we invite you to consult the &lt;a href=&#34;https://uchiwa.io/#/docs/contributing&#34;&gt;Uchiwa documentation&lt;/a&gt; in order to properly setup your environment.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
