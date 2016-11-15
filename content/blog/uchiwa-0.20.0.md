@@ -34,7 +34,7 @@ We added some examples in the
 
 ## Popovers redesign
 The popovers of the left sidebar have been redesigned in order to optimize space
-and now display the silenced items
+utilization and now display the silenced items:
 
 ![](/images/0-20-0-popovers.png)
 
