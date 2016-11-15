@@ -13,10 +13,10 @@
 <title>
 
 
-     Uchiwa 0.13.0 
+     Uchiwa 0.11.0 
 
 </title>
-<link rel="canonical" href="https://blog.uchiwa.io/blog/0-13-0/">
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-11-0/">
 
 
 <script type="text/javascript">
@@ -36,9 +36,9 @@
 
 
 
-<link rel="stylesheet" href="/css/reset.css?1479224505">
-<link rel="stylesheet" href="/css/pygments.css?1479224505">
-<link rel="stylesheet" href="/css/main.css?1479224505">
+<link rel="stylesheet" href="/css/reset.css?1479230216">
+<link rel="stylesheet" href="/css/pygments.css?1479230216">
+<link rel="stylesheet" href="/css/main.css?1479230216">
 
 
 
@@ -132,39 +132,41 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Uchiwa 0.13.0
+    Uchiwa 0.11.0
 
 </div>
 
                     <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
                 </div>
                 <div class="meta">
-                    <div class="date" title="Sun Nov 22 2015 00:00:00 EST">Nov 22, 2015</div>
+                    <div class="date" title="Thu Sep 24 2015 00:00:00 -0500">Sep 24, 2015</div>
                     <div class="reading-time"><div class="middot"></div>1 minute read</div>
                 </div>
             </div>
             <div class="markdown">
                 
 
-<p>We&rsquo;re happy to announce the release of Uchiwa 0.13.0. This new version introduces two important features designed for high availability.</p>
+<p>Good news - Uchiwa 0.11.1 has been published. This release introduces some major performance and stability enhancements.</p>
 
-<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.13.0</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0130-2015-11-22">view the changelog</a>. It will be available for download on the Sensu repositories soon.</p>
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.11.1</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0111-2015-09-23">view the changelog</a>. It will be available for download on the Sensu repositories within the next few days.</p>
 
-<h3 id="datacenters-high-availability">Datacenters high availability</h3>
+<h3 id="uchiwa-restful-api">Uchiwa RESTful API</h3>
 
-<p>You can now define multiple Sensu APIs by datacenter in order to provide failover and rudimentary load balancing between these APIs, which eliminates the latest single point of failure in Uchiwa for a truly redundant environment.</p>
+<p>The Uchiwa frontend application now fully takes advantage of the new granular API in order to efficiently load the precise resources needed by the web application. This results in a lower memory consumption of the browser and a more stable navigation.</p>
 
-<p>Learn how to get started with the datacenter high availability by heading to the <a href="http://docs.uchiwa.io/en/latest/configuration/sensu/#datacenters-high-availability">Uchiwa docs</a>.</p>
+<p>This API is not considered stable yet in the sense that it might evolve within the next few releases but as soon it does, we&rsquo;ll provide some documentation so you can take advantage of it and have access to a single source of information for all your Sensu data.</p>
 
-<h3 id="static-rsa-keys">Static RSA keys</h3>
+<h3 id="bulk-removal-of-stashes">Bulk removal of stashes</h3>
 
-<p>It&rsquo;s now possible to use your own 2048-bit RSA key for generating and validating the signatures of the JSON Web Tokens (JWT) used by the authentication module.</p>
+<p>You can now easily delete multiple stashes at once.</p>
 
-<p>By default, Uchiwa generates a temporary key during its launch, which is later destroyed once the process is stopped or restarted. This behavior is problematic when multiple instances of Uchiwa are used behind a load balancer or if the Uchiwa process needs to be frequently restarted.</p>
+<p><img src="/images/0-11-0-bulk-stashes.png" alt="" /></p>
 
-<p>To start using your own keys, consult the <a href="http://docs.uchiwa.io/en/latest/configuration/sensu/#datacenters-high-availability">Uchiwa docs</a>.</p>
+<h3 id="go-1-5-1">Go 1.5.1</h3>
 
-<p>Go <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0130-2015-11-22">see the changelog</a> for more changes!</p>
+<p>Uchiwa is now built with Go 1.5.1 instead of 1.4.2, which brings some interesting improvements to the garbage collector and the runtime.</p>
+
+<p>Go see the <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0111-2015-09-23">changelog</a> for all improvements and bug fixes!</p>
 
                 <br>
                 <p><a href="/blog/">Back to posts</a></p>

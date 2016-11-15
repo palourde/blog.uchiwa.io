@@ -13,10 +13,10 @@
 <title>
 
 
-     Two Projects, One Dashboard 
+     Uchiwa 0.20.0 
 
 </title>
-<link rel="canonical" href="https://blog.uchiwa.io/blog/two-projects-one-dashboard/">
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-20-0/">
 
 
 <script type="text/javascript">
@@ -36,9 +36,9 @@
 
 
 
-<link rel="stylesheet" href="/css/reset.css?1479224505">
-<link rel="stylesheet" href="/css/pygments.css?1479224505">
-<link rel="stylesheet" href="/css/main.css?1479224505">
+<link rel="stylesheet" href="/css/reset.css?1479230216">
+<link rel="stylesheet" href="/css/pygments.css?1479230216">
+<link rel="stylesheet" href="/css/main.css?1479230216">
 
 
 
@@ -132,35 +132,53 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Two Projects, One Dashboard
+    Uchiwa 0.20.0
 
 </div>
 
                     <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
                 </div>
                 <div class="meta">
-                    <div class="date" title="Sun Jan 25 2015 00:00:00 EST">Jan 25, 2015</div>
+                    <div class="date" title="Tue Nov 15 2016 12:00:00 EST">Nov 15, 2016</div>
                     <div class="reading-time"><div class="middot"></div>1 minute read</div>
                 </div>
             </div>
             <div class="markdown">
                 
 
-<p>In order to improve Uchiwa&rsquo;s modularity and isolate two softwares written in different languages, the dashboard is now divided into two distinct repositories.</p>
+<p>We&rsquo;re happy to announce the release of Uchiwa 0.20.0, which introduces some
+interesting features and important behind the scenes changes.</p>
 
-<h3 id="uchiwa-https-github-com-sensu-uchiwa"><a href="https://github.com/sensu/uchiwa">Uchiwa</a></h3>
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.20.0</a> right now and
+<a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0200-2016-11-14">view the changelog</a>.</p>
 
-<p>The Uchiwa repository now contains the backend of Uchiwa, which consists of a Go web server that queries every Sensu API and exposes the results through its own API.</p>
+<p>Here&rsquo;s a quick overview of some of the new features:</p>
 
-<h3 id="uchiwa-web-https-github-com-sensu-uchiwa-web"><a href="https://github.com/sensu/uchiwa-web">Uchiwa-web</a></h3>
+<h2 id="users-level-configuration">Users-level configuration</h2>
 
-<p>The new Uchiwa-web repository is hosting the web dashboard, which is written with the AngularJS framework. Its job is to query the backend API and present the information in the most useful way possible.</p>
+<p>Uchiwa can now be further customized, from the <strong>date format</strong> to the <strong>default
+theme</strong>. These are some of the most requested features we received.</p>
 
-<h3 id="what-s-the-impact">What&rsquo;s the impact?</h3>
+<p>Head over to the
+<a href="https://docs.uchiwa.io/getting-started/configuration/#users-options">Uchiwa documentation</a>
+to learn how to get started with these new options.</p>
 
-<p>Unless you want to contribute to Uchiwa, it does not affect you since Uchiwa-web is now included as a bower component. Make sure to run <code>npm install &ndash;production</code> after pulling the last changes, if you installed Uchiwa from the source.</p>
+<h2 id="regular-expressions-and-key-value-search-queries">Regular Expressions and key:value search queries</h2>
 
-<p>If you wish to start contributing and improving Uchiwa, we invite you to consult the <a href="https://uchiwa.io/#/docs/contributing">Uchiwa documentation</a> in order to properly setup your environment.</p>
+<p>Filtering in Uchiwa just got smarter, because we understand that no two Sensu installations
+are alike and we hope to bring more flexibility in Uchiwa to support that fact.</p>
+
+<p>Starting with 0.20, you can now use regexes in your searches and also optionally
+specify a field against which a value should be matched.</p>
+
+<p>We added some examples in the
+<a href="https://docs.uchiwa.io/guides/search-queries/">Uchiwa documentation</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>These are just some of the new changes, we invite you to consult the
+<a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md">changelog</a> for the
+complete list and we hope you enjoy this new release!</p>
 
                 <br>
                 <p><a href="/blog/">Back to posts</a></p>

@@ -13,10 +13,10 @@
 <title>
 
 
-     Uchiwa 0.8.1 
+     Two Projects, One Dashboard 
 
 </title>
-<link rel="canonical" href="https://blog.uchiwa.io/blog/0-8-1/">
+<link rel="canonical" href="https://blog.uchiwa.io/blog/two-projects-one-dashboard/">
 
 
 <script type="text/javascript">
@@ -36,9 +36,9 @@
 
 
 
-<link rel="stylesheet" href="/css/reset.css?1479224505">
-<link rel="stylesheet" href="/css/pygments.css?1479224505">
-<link rel="stylesheet" href="/css/main.css?1479224505">
+<link rel="stylesheet" href="/css/reset.css?1479230216">
+<link rel="stylesheet" href="/css/pygments.css?1479230216">
+<link rel="stylesheet" href="/css/main.css?1479230216">
 
 
 
@@ -132,31 +132,35 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Uchiwa 0.8.1
+    Two Projects, One Dashboard
 
 </div>
 
                     <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
                 </div>
                 <div class="meta">
-                    <div class="date" title="Tue May 5 2015 00:00:00 -0500">May 5, 2015</div>
+                    <div class="date" title="Sun Jan 25 2015 00:00:00 EST">Jan 25, 2015</div>
                     <div class="reading-time"><div class="middot"></div>1 minute read</div>
                 </div>
             </div>
             <div class="markdown">
-                <p>Good news! We are releasing Uchiwa 0.8.1 and it&rsquo;s packed with improvements and bug fixes.</p>
+                
 
-<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.8.1</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#081-2015-05-05">view the changelog</a>. It will be available for download on the Sensu repositories soon.</p>
+<p>In order to improve Uchiwa&rsquo;s modularity and isolate two softwares written in different languages, the dashboard is now divided into two distinct repositories.</p>
 
-<p>Improvement highlights since 0.7.0:</p>
+<h3 id="uchiwa-https-github-com-sensu-uchiwa"><a href="https://github.com/sensu/uchiwa">Uchiwa</a></h3>
 
-<ul>
-<li>Add a dedicated datacenters view</li>
-<li>The events are now ordered by status, then by most recent</li>
-<li>Display relative times the lists</li>
-<li>Refactoring of the stashes handlers in order to improve their reliability</li>
-<li>User profile picture and dropdown menu in the navbar</li>
-</ul>
+<p>The Uchiwa repository now contains the backend of Uchiwa, which consists of a Go web server that queries every Sensu API and exposes the results through its own API.</p>
+
+<h3 id="uchiwa-web-https-github-com-sensu-uchiwa-web"><a href="https://github.com/sensu/uchiwa-web">Uchiwa-web</a></h3>
+
+<p>The new Uchiwa-web repository is hosting the web dashboard, which is written with the AngularJS framework. Its job is to query the backend API and present the information in the most useful way possible.</p>
+
+<h3 id="what-s-the-impact">What&rsquo;s the impact?</h3>
+
+<p>Unless you want to contribute to Uchiwa, it does not affect you since Uchiwa-web is now included as a bower component. Make sure to run <code>npm install &ndash;production</code> after pulling the last changes, if you installed Uchiwa from the source.</p>
+
+<p>If you wish to start contributing and improving Uchiwa, we invite you to consult the <a href="https://uchiwa.io/#/docs/contributing">Uchiwa documentation</a> in order to properly setup your environment.</p>
 
                 <br>
                 <p><a href="/blog/">Back to posts</a></p>

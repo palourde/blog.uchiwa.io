@@ -2,6 +2,7 @@ baseurl = "https://blog.uchiwa.io/"
 author = "Simon Plourde"
 title = "Uchiwa Blog"
 languageCode = "en-us"
+publishdir = "docs"
 theme = "cocoa"
 
 [params]

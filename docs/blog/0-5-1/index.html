@@ -13,10 +13,10 @@
 <title>
 
 
-     Uchiwa 0.20.0 
+     Uchiwa 0.5.1 
 
 </title>
-<link rel="canonical" href="https://blog.uchiwa.io/blog/0-20-0/">
+<link rel="canonical" href="https://blog.uchiwa.io/blog/0-5-1/">
 
 
 <script type="text/javascript">
@@ -36,9 +36,9 @@
 
 
 
-<link rel="stylesheet" href="/css/reset.css?1479224505">
-<link rel="stylesheet" href="/css/pygments.css?1479224505">
-<link rel="stylesheet" href="/css/main.css?1479224505">
+<link rel="stylesheet" href="/css/reset.css?1479230216">
+<link rel="stylesheet" href="/css/pygments.css?1479230216">
+<link rel="stylesheet" href="/css/main.css?1479230216">
 
 
 
@@ -132,53 +132,55 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Uchiwa 0.20.0
+    Uchiwa 0.5.1
 
 </div>
 
                     <div class="initials"><a href="https://blog.uchiwa.io/"></a></div>
                 </div>
                 <div class="meta">
-                    <div class="date" title="Tue Nov 15 2016 12:00:00 EST">Nov 15, 2016</div>
-                    <div class="reading-time"><div class="middot"></div>1 minute read</div>
+                    <div class="date" title="Sat Feb 21 2015 00:00:00 EST">Feb 21, 2015</div>
+                    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
                 </div>
             </div>
             <div class="markdown">
                 
 
-<p>We&rsquo;re happy to announce the release of Uchiwa 0.20.0, which introduces some
-interesting features and important behind the scenes changes.</p>
+<p>We&rsquo;re happy to announce the release of Uchiwa 0.5.1! This is a small bug fix release but since Uchiwa 0.5.0  was never officially released due to some build issues, it also contains a lot of new exciting features.</p>
 
-<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.20.0</a> right now and
-<a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0200-2016-11-14">view the changelog</a>.</p>
+<p>You can <a href="https://uchiwa.io/#/download">download Uchiwa 0.5.1</a> right now and <a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#051-2015-02-21">view the changelog</a>. It should also be available for download on the Sensu repositories soon.</p>
 
-<p>Here&rsquo;s a quick overview of some of the new features:</p>
+<p>Please <a href="https://github.com/sensu/uchiwa/issues">report</a> any issue you may find.</p>
 
-<h2 id="users-level-configuration">Users-level configuration</h2>
+<h4 id="two-projects-one-dashboard">Two projects, one dashboard</h4>
 
-<p>Uchiwa can now be further customized, from the <strong>date format</strong> to the <strong>default
-theme</strong>. These are some of the most requested features we received.</p>
+<p>With the 0.5.0 release, Uchiwa has been divided into two distinct repositories. For more information, read the <a href="http://blog.uchiwa.io/two-projects-one-dashboard/">blog post</a>.</p>
 
-<p>Head over to the
-<a href="https://docs.uchiwa.io/getting-started/configuration/#users-options">Uchiwa documentation</a>
-to learn how to get started with these new options.</p>
+<h4 id="contribute-to-the-uchiwa-docs">Contribute to the Uchiwa docs</h4>
 
-<h2 id="regular-expressions-and-key-value-search-queries">Regular Expressions and key:value search queries</h2>
+<p>All documentation regarding Uchiwa has been moved to <a href="http://docs.uchiwa.io/en/latest/">docs.uchiwa.io</a>. You can now start contributing to the documentation by forking the <a href="https://github.com/palourde/uchiwa-docs">uchiwa-docs repository</a>.</p>
 
-<p>Filtering in Uchiwa just got smarter, because we understand that no two Sensu installations
-are alike and we hope to bring more flexibility in Uchiwa to support that fact.</p>
+<h4 id="improved-authentication">Improved authentication</h4>
 
-<p>Starting with 0.20, you can now use regexes in your searches and also optionally
-specify a field against which a value should be matched.</p>
+<p>The basic http authentication method previously used has been replaced with JSON Web Tokens (JWT), which allows us to implement a login page instead of a dialog box.</p>
 
-<p>We added some examples in the
-<a href="https://docs.uchiwa.io/guides/search-queries/">Uchiwa documentation</a>.</p>
+<p><img src="/images/0-5-1-login.png" alt="" /></p>
 
-<h2 id="conclusion">Conclusion</h2>
+<h4 id="aggregates">Aggregates</h4>
 
-<p>These are just some of the new changes, we invite you to consult the
-<a href="https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md">changelog</a> for the
-complete list and we hope you enjoy this new release!</p>
+<p>You can now list your aggregate checks directly from Uchiwa, using the <em>Aggregates</em> view. You can also preview the result of a particular aggregate check that ran at a specific time within the same view.</p>
+
+<p><img src="/images/0-5-1-aggregates.png" alt="" /></p>
+
+<h4 id="custom-date-for-stashes">Custom date for stashes</h4>
+
+<p>A fifth option is now available during stash creation in order to allow a custom expiration date by manually entering the desired value.</p>
+
+<p><img src="/images/0-5-1-expiration.png" alt="" /></p>
+
+<h4 id="silenced-clients-filter">Silenced clients filter</h4>
+
+<p>The option <em>Silenced Clients</em> has been added to the <em>Hide</em>  dropdown menu on the <em>Events</em> view, which will hide any events associated to a client that has already been silenced. In addition to this change, the client acknowledgment status is now also shown beside the source name.</p>
 
                 <br>
                 <p><a href="/blog/">Back to posts</a></p>
