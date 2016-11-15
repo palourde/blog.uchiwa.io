@@ -32,6 +32,13 @@ specify a field against which a value should be matched.
 We added some examples in the
 [Uchiwa documentation](https://docs.uchiwa.io/guides/search-queries/).
 
+## Popovers redesign
+The popovers of the left sidebar have been redesigned in order to optimize space
+and now display the silenced items
+
+![](/images/0-20-0-popovers.png)
+
+
 ## Conclusion
 These are just some of the new changes, we invite you to consult the
 [changelog](https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md) for the

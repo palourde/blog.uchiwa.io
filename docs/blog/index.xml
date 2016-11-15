@@ -45,6 +45,13 @@ specify a field against which a value should be matched.&lt;/p&gt;
 &lt;p&gt;We added some examples in the
 &lt;a href=&#34;https://docs.uchiwa.io/guides/search-queries/&#34;&gt;Uchiwa documentation&lt;/a&gt;.&lt;/p&gt;
 
+&lt;h2 id=&#34;popovers-redesign&#34;&gt;Popovers redesign&lt;/h2&gt;
+
+&lt;p&gt;The popovers of the left sidebar have been redesigned in order to optimize space
+and now display the silenced items&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-20-0-popovers.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;These are just some of the new changes, we invite you to consult the
