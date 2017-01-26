@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog-rsses on Uchiwa Blog</title>
+    <title>Blogs on Uchiwa Blog</title>
     <link>https://blog.uchiwa.io/blog/index.xml</link>
-    <description>Recent content in Blog-rsses on Uchiwa Blog</description>
+    <description>Recent content in Blogs on Uchiwa Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Nov 2016 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jan 2017 12:00:00 -0500</lastBuildDate>
     <atom:link href="https://blog.uchiwa.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Uchiwa 0.22.0</title>
+      <link>https://blog.uchiwa.io/blog/0-22-0/</link>
+      <pubDate>Wed, 25 Jan 2017 12:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-22-0/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.22.0, which introduces responsive web design for mobile devices and security and stability improvements.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.22.0&lt;/a&gt; right now and
+&lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0220-2017-01-25&#34;&gt;view the changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;responsive-web-design&#34;&gt;Responsive Web Design&lt;/h2&gt;
+
+&lt;p&gt;Browsing Uchiwa on your mobile device just got a whole lot better with the new responsive design. Let us know what you think of it!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-22-0-responsive-design.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;These are just some of the new changes, we invite you to consult the
+&lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md&#34;&gt;changelog&lt;/a&gt; for the
+complete list and we hope you enjoy this new release!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Uchiwa 0.20.0</title>
