@@ -6,8 +6,53 @@
     <description>Recent content in Blogs on Uchiwa Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jan 2017 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 24 Mar 2017 12:00:00 -0500</lastBuildDate>
     <atom:link href="https://blog.uchiwa.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Uchiwa 0.23.0</title>
+      <link>https://blog.uchiwa.io/blog/0-23-0/</link>
+      <pubDate>Fri, 24 Mar 2017 12:00:00 -0500</pubDate>
+      
+      <guid>https://blog.uchiwa.io/blog/0-23-0/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;re happy to announce the release of Uchiwa 0.23.0, which introduces a brand
+new interface for silencing and support of new Sensu features introduced with
+0.28.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://uchiwa.io/#/download&#34;&gt;download Uchiwa 0.23.0&lt;/a&gt; right now and
+&lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md#0230-2017-03-24&#34;&gt;view the changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;silencing&#34;&gt;Silencing&lt;/h2&gt;
+
+&lt;p&gt;The silencing modal window has been completely redesigned to let you fully take
+advantage of the new built-in silencing capabilities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-23-0-silencing.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;editing-the-client-registry&#34;&gt;Editing the client registry&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sensuapp.org/docs/latest/reference/clients.html#proxy-clients&#34;&gt;Sensu proxy clients&lt;/a&gt;
+can now be edited directly from Uchiwa. Please note that it only applies to
+clients with &lt;code&gt;keepalives:false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-23-0-client-registry.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sensu-servers-information&#34;&gt;Sensu servers information&lt;/h2&gt;
+
+&lt;p&gt;Additional information about your Sensu servers is now available in the new
+datacenter view, accessible from the datacenters view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-23-0-server-info.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;These are just some of the new changes, we invite you to consult the
+&lt;a href=&#34;https://github.com/sensu/uchiwa/blob/master/CHANGELOG.md&#34;&gt;changelog&lt;/a&gt; for the
+complete list and we hope you enjoy this new release!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Uchiwa 0.22.0</title>
