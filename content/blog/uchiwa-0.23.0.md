@@ -28,7 +28,8 @@ clients with `keepalives:false`.
 
 ## Sensu servers information
 Additional information about your Sensu servers is now available in the new
-datacenter view, accessible from the datacenters view.
+datacenter view, accessible from the datacenters view. Please note that this
+feature requires at least Sensu 0.28.
 
 ![](/images/0-23-0-server-info.png)
 

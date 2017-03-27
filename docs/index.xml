@@ -42,7 +42,8 @@ clients with &lt;code&gt;keepalives:false&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;sensu-servers-information&#34;&gt;Sensu servers information&lt;/h2&gt;
 
 &lt;p&gt;Additional information about your Sensu servers is now available in the new
-datacenter view, accessible from the datacenters view.&lt;/p&gt;
+datacenter view, accessible from the datacenters view. Please note that this
+feature requires at least Sensu 0.28.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://blog.uchiwa.io/images/0-23-0-server-info.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
